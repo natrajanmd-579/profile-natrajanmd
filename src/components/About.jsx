@@ -92,12 +92,12 @@ export default function About() {
             </p>
 
             <QRCodeCanvas
-              value="/resume.pdf"   // ✅ works after deploy
+              value="http://natrajanmd-profile.netlify.app/resume.pdf"   // ✅ works after deploy
               size={150}
             />
 
             <a 
-              href="/resume.pdf"
+              href="http://natrajanmd-profile.netlify.app/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               style={{
