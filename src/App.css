@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* DARK THEME */
+.dark {
+  --bg: #0d1117;
+  --text: #e6edf3;
+  --card: #161b22;
+  --border: #30363d;
+  --primary: #7c3aed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* LIGHT THEME */
+.light {
+  --bg: #ffffff;
+  --text: #111827;
+  --card: #f3f4f6;
+  --border: #d1d5db;
+  --primary: #7c3aed;
 }
 
-.App-header {
-  background-color: #282c34;
+/* APPLY THEME */
+.dark, .light {
+  background: var(--bg);
+  color: var(--text);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition: all 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+/* COMMON UI STYLES */
+.section-title span {
+  color: var(--primary);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Cards */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+}
+
+.html{
+  scroll-behavior: smooth;
+}
+/* Mobile responsive base */
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 1rem !important;
   }
-  to {
-    transform: rotate(360deg);
+}
+/* Show hamburger only on mobile */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block !important;
+  }
+
+  .nav-links {
+    display: none !important;
   }
 }
