@@ -52,7 +52,7 @@ export default function Hero() {
         }}>
           
           <a 
-            href="/resume_1_.pdf"
+            href="/resume__1_.pdf"
             download
             style={btnStyle}
           >
